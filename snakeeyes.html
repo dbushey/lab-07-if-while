@@ -9,11 +9,13 @@
 	var second_roll = prompt("Give me a number for the second roll (1-6) ");
 	
 	// covert input to integer
-	var num1 = parseInt(first_roll);
-	var num2 = parseInt(second_roll);
+	var num1 = parseInt(first_roll, 10);
+	var num2 = parseInt(second_roll, 10);
 
 	if num1 === 1 && num2 === 1 {
-		console.log("SNAKE EYES!");
+		console.log("SNAKE EYES!")
+	} else {
+		console.log("That's a normal roll!")
 	}
 
 	</script>
